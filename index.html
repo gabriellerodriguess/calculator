@@ -12,38 +12,39 @@
     <div class="container">
         <div class="calculator">
             <h1>Calculator</h1>
-            <p class="result"></p>
+            <p class="result" id="result"></p>
             <table class="table">
                 <tr>
-                    <td><button class="button-standard lightgrey">C</button></td>
+                    <td><button class="button-standard lightgrey" onclick="clean()">C</button></td>
                     <td><button class="button-standard lightgrey"><</button></td>
-                    <td><button class="button-standard lightgrey">/</button></td>
-                    <td><button class="button-standard yellow">X</button></td>
+                    <td><button class="button-standard lightgrey" onclick="insertResult('/')">/</button></td>
+                    <td><button class="button-standard yellow" onclick="insertResult('*')">X</button></td>
                 </tr>
                 <tr>
-                    <td><button class="button-standard darkgrey">7</button></td>
-                    <td><button class="button-standard darkgrey">8</button></td>
-                    <td><button class="button-standard darkgrey">9</button></td>
-                    <td><button class="button-standard yellow">-</button></td>
+                    <td><button class="button-standard darkgrey" onclick="insertResult('7')">7</button></td>
+                    <td><button class="button-standard darkgrey" onclick="insertResult('8')">8</button></td>
+                    <td><button class="button-standard darkgrey" onclick="insertResult('9')">9</button></td>
+                    <td><button class="button-standard yellow"  onclick="insertResult('-')">-</button></td>
                 </tr>
                 <tr>
-                    <td><button class="button-standard darkgrey">4</button></td>
-                    <td><button class="button-standard darkgrey">5</button></td>
-                    <td><button class="button-standard darkgrey">6</button></td>
-                    <td><button class="button-standard yellow">+</button></td>
+                    <td><button class="button-standard darkgrey" onclick="insertResult('4')">4</button></td>
+                    <td><button class="button-standard darkgrey" onclick="insertResult('5')">5</button></td>
+                    <td><button class="button-standard darkgrey" onclick="insertResult('6')">6</button></td>
+                    <td><button class="button-standard yellow"  onclick="insertResult('+')">+</button></td>
                 </tr>
                 <tr>
-                    <td><button class="button-standard darkgrey">1</button></td>
-                    <td><button class="button-standard darkgrey">2</button></td>
-                    <td><button class="button-standard darkgrey">3</button></td>
+                    <td><button class="button-standard darkgrey" onclick="insertResult('1')">1</button></td>
+                    <td><button class="button-standard darkgrey" onclick="insertResult('2')">2</button></td>
+                    <td><button class="button-standard darkgrey" onclick="insertResult('3')">3</button></td>
                     <td rowspan="2"><button style="height:104px" class="button-standard yellow">=</button></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><button style="width:104px" class="button-standard darkgrey" >0</button></td>
-                    <td><button  class="button-standard darkgrey">.</button></td>
+                    <td colspan="2"><button style="width:104px" class="button-standard darkgrey" onclick="insertResult('0')">0</button></td>
+                    <td><button  class="button-standard darkgrey"  onclick="insertResult('.')">.</button></td>
                 </tr>
             </table>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
