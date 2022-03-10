@@ -16,7 +16,7 @@
             <table class="table">
                 <tr>
                     <td><button class="button-standard lightgrey" onclick="clean()">C</button></td>
-                    <td><button class="button-standard lightgrey"><</button></td>
+                    <td><button class="button-standard lightgrey" onclick="del()"> < </button></td>
                     <td><button class="button-standard lightgrey" onclick="insertResult('/')">/</button></td>
                     <td><button class="button-standard yellow" onclick="insertResult('*')">X</button></td>
                 </tr>
@@ -36,7 +36,7 @@
                     <td><button class="button-standard darkgrey" onclick="insertResult('1')">1</button></td>
                     <td><button class="button-standard darkgrey" onclick="insertResult('2')">2</button></td>
                     <td><button class="button-standard darkgrey" onclick="insertResult('3')">3</button></td>
-                    <td rowspan="2"><button style="height:104px" class="button-standard yellow">=</button></td>
+                    <td rowspan="2"><button style="height:104px" class="button-standard yellow" onclick="calc()">=</button></td>
                 </tr>
                 <tr>
                     <td colspan="2"><button style="width:104px" class="button-standard darkgrey" onclick="insertResult('0')">0</button></td>
